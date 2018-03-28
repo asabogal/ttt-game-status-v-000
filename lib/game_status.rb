@@ -49,6 +49,12 @@ end
 def winner?(board)
   winning_token = won?(board)
   winning_token.each do |token|
-    token.first
+    if token.find == "X"
+      return "X"
+    elseif token.find == "O"
+      return "O"
+    else
+      winner?(board)
+    end
   end
 end
