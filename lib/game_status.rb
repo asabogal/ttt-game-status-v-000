@@ -16,12 +16,6 @@ WIN_COMBINATIONS = [
   [2,4,6],
 ]
 
-# board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
-
-#__0__|__1__|__2__
-#__3__|__4__|__5__
-#  6  |  7  |  8
-
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combo|
@@ -50,4 +44,4 @@ def winner(board)
   if winning_token = won?(board)
   board[winning_token[0]]
   end
-end
+endxw
