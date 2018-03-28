@@ -48,5 +48,5 @@ end
 
 def winner(board)
   winning_token = won?(board)
-  winning_token[0]
+  winning_token.shift
 end
