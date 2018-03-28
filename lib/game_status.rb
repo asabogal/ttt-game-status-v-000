@@ -49,5 +49,6 @@ end
 def winner?(board)
   winning_token = won?(board)
   winning_token.detect do |token|
+    token.shift
     end
 end
