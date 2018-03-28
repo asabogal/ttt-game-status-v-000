@@ -47,5 +47,9 @@ def over?(board)
 end
 
 def winner?(board)
-  
+  winning_token = won?(board)
+  winning_token.each do |token|
+    return token[0]
+  end
+  end
 end
