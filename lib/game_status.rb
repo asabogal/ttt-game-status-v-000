@@ -49,6 +49,5 @@ end
 def winner?(board)
   winning_token = won?(board)
   winning_token.detect do |token|
-  token.first
-  end
+    end
 end
