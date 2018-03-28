@@ -46,7 +46,7 @@ def over?(board)
   won?(board) || draw?(board) || full?(board)
 end
 
-def winner?(board)
+def winner(board)
   winning_token = won?(board)
   winning_token.detect do |token|
     token.shift
