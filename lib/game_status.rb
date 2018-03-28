@@ -48,7 +48,7 @@ end
 
 def winner?(board)
   winning_token = won?(board)
-  winning_token.each do |token|
-  token.find
+  winning_token.detect do |token|
+  token.first
   end
 end
